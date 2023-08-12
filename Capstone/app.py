@@ -4,16 +4,16 @@ app=Flask(__name__)
 app.secret_key='capstone'
 
 #Connection sa Database
-app.config['MYSQL_HOST']='localhost'
-app.config['MYSQL_USER']='root'
-app.config['MYSQL_PASSWORD']=''
+app.config['MYSQL_HOST']='db4free.net'
+app.config['MYSQL_USER']='sebastian200x'
+app.config['MYSQL_PASSWORD']='jds09122128032'
 app.config['MYSQL_DB']='dbhofin'
+app.config['MYSQL_PORT'] = 3306
 
 mysql=MySQL(app)
 
 @app.route('/')
 def Home():
-
     flash('hello world')
     #pang call nang or view nang mga data
     quer=mysql.connection.cursor()
@@ -127,7 +127,6 @@ def signup():
 @app.route('/logout')
 def logout():
     session.pop('username',None)
-    
     return redirect(url_for("login"))
 
 
