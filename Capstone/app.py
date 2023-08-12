@@ -1,6 +1,8 @@
 from flask import Flask,render_template,request,url_for,flash,redirect,sessions,session
 from flask_mysqldb import MySQL
+
 app=Flask(__name__)
+
 app.secret_key='capstone'
 
 #Connection sa Database
@@ -56,7 +58,6 @@ def Home2():
 
 @app.route('/login' ,methods=['POST','GET'])
 def login():
-    
     if (request.method=='POST'):
         username=request.form.get('username')
         password=request.form.get('password')
