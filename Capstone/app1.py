@@ -143,24 +143,24 @@ def delete(id_data):
 def update():
     if request.method=='POST':
      
-         id_data=request.form['id']
-         gender=request.form['gender']
-         email=request.form['email']
-         idno=request.form['idno']
-         blk=request.form['blk']
-         lot=request.form['lot']
-         homelot=request.form['homelot']
-         openspace=request.form['openspace']
-         share=request.form['share']
-         principal=request.form['principal']
-         MRIno=request.form['MRI']
-         sql=mysql.connection.cursor()
-         total=int(share)+int(principal)+int(MRIno)
-         sql.execute("UPDATE tbl_userinfo SET gender=%s, email=%s, id_no=%s,blk_no=%s,lot_no=%s,homelot_area=%s,open_space=%s,sharein_loan=%s,principal_interest=%s,MRI=%s,Total=%s WHERE userinfo_id=%s", (gender,email,idno,blk,lot,homelot,openspace,share,principal,MRIno,total, id_data))
-         mysql.connection.commit()
+        id_data=request.form['id']
+        gender=request.form['gender']
+        email=request.form['email']
+        idno=request.form['idno']
+        blk=request.form['blk']
+        lot=request.form['lot']
+        homelot=request.form['homelot']
+        openspace=request.form['openspace']
+        share=request.form['share']
+        principal=request.form['principal']
+        MRIno=request.form['MRI']
+        sql=mysql.connection.cursor()
+        total=int(share)+int(principal)+int(MRIno)
+        sql.execute("UPDATE tbl_userinfo SET gender=%s, email=%s, id_no=%s,blk_no=%s,lot_no=%s,homelot_area=%s,open_space=%s,sharein_loan=%s,principal_interest=%s,MRI=%s,Total=%s WHERE userinfo_id=%s", (gender,email,idno,blk,lot,homelot,openspace,share,principal,MRIno,total, id_data))
+        mysql.connection.commit()
          
-         flash("NA UPDATE ANG IYONG INFO")
-         return redirect(url_for('Home'))
+        flash("NA UPDATE ANG IYONG INFO")
+        return redirect(url_for('Home'))
 
 @app.route('/payment/<int:id>', methods=['POST','GET'])
 def payment(id):
