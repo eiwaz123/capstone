@@ -1,0 +1,64 @@
+.container {
+    max-width: 80%;
+    margin: 20px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+
+.card {
+    width: 340px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* border: 1px solid black; */
+    padding: 20px;
+    position: relative;
+}
+
+
+.card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 30px;
+    margin-bottom: 20px;
+}
+
+.button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px 20px;
+    background-color: #6FB9B9;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #548d8d;
+}
+
+.red {
+    background-color: rgb(255, 69, 69);
+    color: white;
+}
+
+.red:hover {
+    background-color: rgb(183, 50, 50);
+
+}
+
+@media screen and (max-width: 550px) {
+    .card {
+        width: 100%;
+    }
+}

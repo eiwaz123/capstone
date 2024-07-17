@@ -1,0 +1,137 @@
+h1 {
+    text-align: center;
+  }
+  
+  h2 {
+    margin-top: 2%;
+    padding: 1%;
+  }
+  
+  .scrollable {
+    max-height: 45%;
+    overflow-y: scroll;
+  }
+  .btn-center {
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(54, 199, 247);
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+  
+    
+  
+  }
+  .container {
+    padding: 20px ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .btn-print {
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(54, 199, 247);
+    padding: 10px 0;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+
+  
+  .btn-view {
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(54, 199, 247);
+    padding: 10px 0;
+    font-weight: bold;
+  }
+  
+  .btn-generate {
+    width: 60px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 1px solid black;
+    background-color: rgb(238, 227, 80);
+    padding: 10px 0;
+    font-weight: bold;
+    color: black;
+  }
+  
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 0;
+  }
+  
+  .table td,
+  .table th {
+    border: 1px solid black;
+    padding: 10px;
+  }
+  
+  th {
+    background-color: #f2f2f2;
+    position: sticky;
+    top: 0;
+    outline: 1px solid black;
+  }
+  
+  .search-input {
+    width: 100%;
+    padding: 8px;
+    margin: 10px 0;
+    box-sizing: border-box;
+  }
+  
+  .no-results {
+    font-style: italic;
+    color: red;
+  }
+  
+  .half {
+    border: 1px solid black;
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background-color: #6fb9b9;
+  }
+  
+  .half-half {
+    width: 100%;
+    
+  }
+  
+  .sort-btn,
+  th {
+    cursor: pointer;
+  }
+  
+  .sort-btn::after {
+    content: "\f0dc";
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    position: absolute;
+    right: 5px;
+  }
+  
+  .sort-desc::after {
+    content: "\f0de";
+  }
+  
